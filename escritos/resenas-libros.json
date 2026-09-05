@@ -1,0 +1,79 @@
+[
+  {
+    "id": "la-vegetariana",
+    "titulo": "La vegetariana",
+    "autor": "Han Kang",
+    "editorial": "Rata / Literatura Random House",
+    "categoria": "Narrativa Contemporánea",
+    "tiempoLectura": "4 min de lectura",
+    "fecha": "Septiembre 2026",
+    "extracto": "Una metamorfosis sorda en la Seúl contemporánea. Han Kang explora el rechazo a la violencia cotidiana a través de una renuncia radical.",
+    "contenido": "Antes de que el sueño comenzara, Yeonghye era una esposa ordinaria. Pero Han Kang no escribe sobre una dieta; escribe sobre el cuerpo como el último territorio de soberanía. La prosa de Kang, traducida con una precisión quirúrgica, desnuda las expectativas familiares y la violencia soterrada de la norma. Lo fascinante de esta novela es cómo el acto aparentemente pasivo de dejar de comer carne desencadena una fractura telúrica en todo su entorno. Una lectura inquietante, poética y profundamente inolvidable.",
+    "comentarios": [
+      {
+        "usuario": "Valeria M.",
+        "fecha": "Hace 2 días",
+        "texto": "Me impactó cómo el cambio de punto de vista en cada una de las tres partes transforma la percepción de la protagonista. Es escalofriante y hermoso a la vez."
+      },
+      {
+        "usuario": "Carlos E.",
+        "fecha": "Hace 5 días",
+        "texto": "¿Creen que la renuncia de Yeonghye es un acto de libertad o una rendición? Me quedé debatiendo esto durante días."
+      }
+    ]
+  },
+  {
+    "id": "la-obligacion-de-ser-humano",
+    "titulo": "La obligación de ser humano",
+    "autor": "Chantal Maillard",
+    "editorial": "Tusquets Editores",
+    "categoria": "Ensayo & Filosofía",
+    "tiempoLectura": "5 min de lectura",
+    "fecha": "Agosto 2026",
+    "extracto": "Un diálogo entre la compasión, la poesía y la filosofía política. Maillard nos invita a desaprender la violencia del yo.",
+    "contenido": "Chantal Maillard no escribe para complacer sino para desmantelar certezas. En este compendio de ensayos y anotaciones, la autora hispanobelga plantea la compasión no como un sentimiento piadoso, sino como un ejercicio de lucidez extrema ante el dolor ajeno. A través de referencias a la filosofía oriental, la tragedia griega y la literatura del siglo XXI, el libro cuestiona nuestra pretensión de inocencia en un mundo interconectado.",
+    "comentarios": [
+      {
+        "usuario": "Sofía R.",
+        "fecha": "Hace 1 semana",
+        "texto": "Es el libro que más he subrayado este año. La forma en que une ética y poesía es insuperable."
+      }
+    ]
+  },
+  {
+    "id": "las-gratis-no-lloran",
+    "titulo": "Un amor",
+    "autor": "Sara Mesa",
+    "editorial": "Anagrama",
+    "categoria": "Ficción Española",
+    "tiempoLectura": "3 min de lectura",
+    "fecha": "Agosto 2026",
+    "extracto": "Una inmersión sofocante en la vida rural, el lenguaje opaco y las microdinámicas de poder en una pequeña comunidad aislada.",
+    "contenido": "Nat, una joven traductora, se instala en La Escapa, un núcleo rural en ruinas. Lo que parece un retiro para recuperar la calma se transforma de inmediato en un escenario tenso donde la amabilidad es ambigua y la intemperie física refleja la precariedad emocional. Sara Mesa maneja la tensión atmosférica con una maestría excepcional: cada frase parece contener una amenaza contenida.",
+    "comentarios": [
+      {
+        "usuario": "Mateo L.",
+        "fecha": "Hace 3 días",
+        "texto": "La atmósfera opresiva del pueblo está tan bien lograda que sientes el polvo y la incomodidad de la protagonista."
+      }
+    ]
+  },
+  {
+    "id": "ficciones",
+    "titulo": "Ficciones",
+    "autor": "Jorge Luis Borges",
+    "editorial": "Debolsillo",
+    "categoria": "Clásicos del Siglo XX",
+    "tiempoLectura": "6 min de lectura",
+    "fecha": "Julio 2026",
+    "extracto": "El laberinto, los espejos y las bibliotecas infinitas. Un mapa esencial para comprender la literatura arquitectónica.",
+    "contenido": "Revisitar Ficciones es recordar que toda lectura es una reescritura. En estos cuentos donde los libros inventados alteran la realidad física y los detectives se pierden en geometrías conceptuales, Borges estableció el canon de la literatura como juego de espejos. Una obra imprescindible para nuestra librería y para cualquier lector que busque asombro intelectual.",
+    "comentarios": [
+      {
+        "usuario": "Elena G.",
+        "fecha": "Hace 2 semanas",
+        "texto": "'El jardín de senderos que se bifurcan' sigue siendo mi relato favorito de todos los tiempos. Cada relectura revela una capa nueva."
+      }
+    ]
+  }
+]

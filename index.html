@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Librería — Una librería independiente para descubrir historias, ideas y conversaciones. Libros para mirar el mundo de otra manera.">
+  <title>Librería — Libros para mirar el mundo de otra manera</title>
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Body Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Inicio de Librería">
+        Librería<span class="dot">.</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="espacio-editorial.html" class="nav-link">Espacio Editorial</a></li>
+          <li><a href="#proximamente" class="nav-link">Muy pronto</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-links"
+          aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. SECCIÓN HERO (PORTADA DE PANTALLA COMPLETA)
+       ========================================================================= -->
+  <main>
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Columna de Texto -->
+          <div class="hero-content reveal">
+            <span class="eyebrow">Librería Independiente</span>
+            <h1 class="hero-title">Libros para mirar el mundo de otra manera<span
+                style="color: var(--color-accent);">.</span></h1>
+            <p class="hero-subtitle">
+              Una librería independiente para descubrir historias, ideas y conversaciones.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#espacio editorial" class="btn btn-primary" id="btn-discover">
+                Descubrir el proyecto
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-footer-note">
+              <span class="pulse-dot"></span>
+              <span>Muy pronto en tu ciudad</span>
+            </div>
+          </div>
+
+          <!-- Columna Visual (Imagen Destacada Protagonista) -->
+          <div class="hero-visual reveal reveal-delay-1">
+            <div class="hero-image-wrapper">
+              <!-- Carga de la imagen principal con fallback automático si se agrega imagen real -->
+              <img src="assets/hero-libreria.svg" alt="Espacio de lectura acogedor y libros curados en la librería"
+                class="hero-img" id="hero-image">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. BREVE MANIFIESTO EDITORIAL
+         ========================================================================= -->
+    <section class="manifest-section" id="manifiesto">
+      <div class="container">
+        <div class="manifest-content reveal">
+          <span class="eyebrow" style="justify-content: center;">Manifiesto</span>
+          <blockquote class="manifest-quote">
+            “Creemos en la lectura como un acto de pausar, cuestionar y reconectar. Seleccionamos títulos que despiertan
+            curiosidad, <strong>abren diálogos</strong> y permanecen con nosotros mucho después de cerrar la última
+            página.”
+          </blockquote>
+          <p class="manifest-author">— Proyecto Librería</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. SECCIÓN "MUY PRONTO" (PILARES Y ACTIVIDADES)
+         ========================================================================= -->
+    <section class="coming-soon-section" id="proximamente">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="eyebrow">Próxima Apertura</span>
+          <h2 class="section-title">Muy pronto.</h2>
+          <p class="section-subtitle">
+            Estamos preparando un espacio pensado para quienes disfrutan descubrir libros con tiempo y curiosidad.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pilar 1 -->
+          <article class="pillar-card reveal reveal-delay-1">
+            <div class="pillar-number">01</div>
+            <h3 class="pillar-title">Catálogo Curado</h3>
+            <p class="pillar-text">
+              Una selección cuidada de literatura contemporánea, ensayos provocadores, poesía e independientes de
+              editoriales de todo el mundo.
+            </p>
+          </article>
+
+          <!-- Pilar 2 -->
+          <article class="pillar-card reveal reveal-delay-2">
+            <div class="pillar-number">02</div>
+            <h3 class="pillar-title">Recomendaciones Personales</h3>
+            <p class="pillar-text">
+              Guías de lectura elaboradas por lectores apasionados. Sin algoritmos, solo criterio y entusiasmo por
+              buenas historias.
+            </p>
+          </article>
+
+          <!-- Pilar 3 -->
+          <article class="pillar-card reveal reveal-delay-3">
+            <div class="pillar-number">03</div>
+            <h3 class="pillar-title">Encuentros &amp; Cultura</h3>
+            <p class="pillar-text">
+              Clubes de lectura, charlas con autoras y autores, presentaciones íntimas y talleres sobre el arte de
+              editar y leer.
+            </p>
+          </article>
+        </div>
+
+        <!-- Tarjeta Teaser Informática -->
+        <div class="teaser-banner reveal">
+          <div class="teaser-info">
+            <h3>Estamos afinando los últimos detalles</h3>
+            <p>Sigue los avances de la librería y sé de los primeros en conocer nuestra fecha de apertura.</p>
+          </div>
+          <span class="badge-tag">Apertura Próximamente</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       5. PIE DE PÁGINA (FOOTER Y ENLACES)
+       ========================================================================= -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" class="footer-logo" aria-label="Ir al inicio de Librería">
+            Librería<span class="dot">.</span>
+          </a>
+          <p>
+            Una librería independiente dedicada a descubrir historias, ideas y conversaciones que importan.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="espacio-editorial.html" class="footer-link">Espacio Editorial</a></li>
+            <li><a href="#proximamente" class="footer-link">Muy pronto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto &amp; Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hola@libreria.com" class="footer-link">
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Librería. Todos los derechos reservados.</p>
+        <p>Libros para mirar el mundo de otra manera.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script de Interacción -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Espacio Editorial de Librería — Reseñas por título de libro, crítica literaria y espacio para escritoras y escritores invitados.">
+  <title>Espacio Editorial — Librería</title>
+
+  <!-- Google Fonts: Newsreader (Serif) & Plus Jakarta Sans (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de Librería">
+        Librería<span class="dot">.</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="espacio-editorial.html" class="nav-link active" aria-current="page">Espacio Editorial</a></li>
+          <li><a href="index.html#proximamente" class="nav-link">Muy pronto</a></li>
+          <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú de navegación">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. CABECERA DEL ESPACIO EDITORIAL
+       ========================================================================= -->
+  <main>
+    <section class="editorial-hero">
+      <div class="container">
+        <div class="editorial-hero-content reveal">
+          <span class="eyebrow">Foro &amp; Pensamiento Editorial</span>
+          <h1 class="editorial-title">Espacio Editorial<span style="color: var(--color-accent);">.</span></h1>
+          <p class="editorial-subtitle">
+            Un índice vivo para explorar lecturas por título de libro, ensayos de crítica literaria y conversaciones con firmas invitadas.
+          </p>
+
+          <!-- BARRA DE BÚSQUEDA Y FILTRADO RÁPIDO CONTEMPORÁNEO -->
+          <div class="editorial-filter-bar">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Buscar por título de libro o autor..." 
+                aria-label="Buscar reseña por título de libro o autor"
+              >
+            </div>
+
+            <div class="filter-pills" id="filter-pills">
+              <button class="pill active" data-filter="todos">Todos</button>
+              <button class="pill" data-filter="resenas">Reseñas por Título</button>
+              <button class="pill" data-filter="critica">Crítica Literaria</button>
+              <button class="pill" data-filter="invitado">Escritor Invitado</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. SECCIÓN PRINCIPAL DE RESEÑAS Y ESCRITOS
+         ========================================================================= -->
+    <section class="editorial-grid-section">
+      <div class="container">
+        
+        <!-- RESEÑAS DE LIBROS POR TÍTULO -->
+        <div class="editorial-block">
+          <div class="block-header">
+            <h2 class="block-title">Reseñas por Título de Libro</h2>
+            <span class="block-count" id="book-count">4 títulos disponibles</span>
+          </div>
+
+          <div class="books-grid" id="books-grid">
+            <!-- Las tarjetas de libros se cargan dinámicamente mediante JavaScript desde escritos/resenas-libros.json -->
+          </div>
+        </div>
+
+        <!-- SECCIÓN DE CRÍTICA LITERARIA Y ESCRITOR INVITADO EN DOS COLUMNAS -->
+        <div class="editorial-duo-grid">
+          
+          <!-- COLUMNA DE CRÍTICA LITERARIA -->
+          <div class="editorial-card-featured" id="critica-section">
+            <div class="featured-badge">Crítica Literaria</div>
+            <div id="critica-content">
+              <!-- Contenido cargado dinámicamente desde escritos/critica-literaria.json -->
+            </div>
+          </div>
+
+          <!-- ESCRITOR INVITADO -->
+          <div class="editorial-card-guest" id="invitado-section">
+            <div class="featured-badge badge-accent">Escritor Invitado</div>
+            <div id="invitado-content">
+              <!-- Contenido cargado dinámicamente desde escritos/escritor-invitado.json -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. LECTOR EDITORIAL INTERACTIVO & FORO (MODAL / SLIDE-OVER)
+         ========================================================================= -->
+    <div class="reader-modal" id="reader-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+      <div class="reader-overlay" id="reader-overlay"></div>
+      
+      <div class="reader-panel">
+        <button class="reader-close" id="reader-close" aria-label="Cerrar lectura">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <article class="reader-article">
+          <header class="reader-header">
+            <span class="reader-category" id="modal-category">Reseña</span>
+            <h2 class="reader-title" id="modal-title">Título del Libro</h2>
+            <div class="reader-meta">
+              <span id="modal-author">Por Autor</span>
+              <span class="dot-sep">•</span>
+              <span id="modal-reading-time">3 min de lectura</span>
+            </div>
+          </header>
+
+          <div class="reader-body" id="modal-body">
+            <!-- Texto completo del artículo -->
+          </div>
+
+          <!-- FORO DE DISCUSIÓN & REFLEXIONES -->
+          <section class="forum-section">
+            <div class="forum-header">
+              <h3 class="forum-title">Diálogos &amp; Conversación</h3>
+              <span class="forum-subtitle">Espacio para compartir impresiones sobre la lectura</span>
+            </div>
+
+            <!-- Lista de comentarios -->
+            <div class="forum-comments-list" id="modal-comments">
+              <!-- Comentarios cargados dinámicamente -->
+            </div>
+
+            <!-- Formulario para agregar nuevo comentario -->
+            <form class="forum-form" id="forum-form">
+              <h4>Participa en el foro</h4>
+              <div class="form-group">
+                <input type="text" id="comment-author" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <textarea id="comment-text" rows="3" placeholder="Escribe tu reflexión o comentario sobre este escrito..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm">
+                Publicar comentario
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       5. PIE DE PÁGINA
+       ========================================================================= -->
+  <footer class="site-footer" id="contacto">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="Ir al inicio de Librería">
+            Librería<span class="dot">.</span>
+          </a>
+          <p>
+            Una librería independiente dedicada a descubrir historias, ideas y conversaciones que importan.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="espacio-editorial.html" class="footer-link">Espacio Editorial</a></li>
+            <li><a href="index.html#proximamente" class="footer-link">Muy pronto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto &amp; Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hola@libreria.com" class="footer-link">
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Librería. Todos los derechos reservados.</p>
+        <p>Libros para mirar el mundo de otra manera.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="editorial.js"></script>
+</body>
+</html>
