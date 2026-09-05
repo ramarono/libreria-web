@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
           titulo: "Un amor",
           autor: "Sara Mesa",
           editorial: "Anagrama",
-          categoria: "Ficción Española",
+          categoria: "Ficción",
           tiempoLectura: "3 min de lectura",
           fecha: "Agosto 2026",
           extracto: "Una inmersión sofocante en la vida rural, el lenguaje opaco y las microdinámicas de poder en una pequeña comunidad aislada.",
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let filtered = state.resenas.filter(item => {
       const matchSearch = item.titulo.toLowerCase().includes(state.searchTerm.toLowerCase()) ||
-                          item.autor.toLowerCase().includes(state.searchTerm.toLowerCase());
+        item.autor.toLowerCase().includes(state.searchTerm.toLowerCase());
       const matchCategory = state.activeFilter === 'todos' || state.activeFilter === 'resenas';
       return matchSearch && matchCategory;
     });
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 4. ABRIR Y CERRA MODAL DEL LECTOR Y FORO
-  window.openArticleModal = function(id, type) {
+  window.openArticleModal = function (id, type) {
     let article = null;
     if (type === 'resena') {
       article = state.resenas.find(b => b.id === id);
