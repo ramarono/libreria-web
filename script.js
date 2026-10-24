@@ -1,5 +1,5 @@
 /* ==========================================================================
-   LIBRERÍA — LÓGICA DE INTERACCIÓN Y ANIMACIONES (JAVASCRIPT VANILLA)
+   PUNTO Y SEGUIDO, LIBRERÍA — LÓGICA DE INTERACCIÓN Y ANIMACIONES (JAVASCRIPT VANILLA)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,15 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. DESPLAZAMIENTO SUAVE PARA EL BOTÓN PRINCIPAL Y ENLACES
-  const discoverBtn = document.getElementById('btn-discover');
-  if (discoverBtn) {
-    discoverBtn.addEventListener('click', (e) => {
-      const targetId = discoverBtn.getAttribute('href');
-      if (targetId && targetId.startsWith('#')) {
-        e.preventDefault();
+  // 3. DESPLAZAMIENTO SUAVE PARA ENLACES INTERNOS
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      const targetId = anchor.getAttribute('href');
+      if (targetId && targetId !== '#') {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
+          e.preventDefault();
           targetElement.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
@@ -56,9 +55,52 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
+  });
+
+  // 4. CARRUSEL DEL CATÁLOGO CURADO (LIBROS ESPECIALES)
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const track = document.getElementById('curated-track');
+  const dots = document.querySelectorAll('.dot-indicator');
+
+  if (prevBtn && nextBtn && track) {
+    let currentIndex = 0;
+    const cards = track.querySelectorAll('.curated-card');
+    const totalCards = cards.length;
+
+    const updateCarousel = (index) => {
+      currentIndex = index;
+      if (window.innerWidth <= 992) {
+        cards.forEach((card, i) => {
+          card.style.display = i === currentIndex ? 'flex' : 'none';
+        });
+      } else {
+        cards.forEach(card => card.style.display = 'flex');
+      }
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    };
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateCarousel(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateCarousel(currentIndex);
+    });
+
+    window.addEventListener('resize', () => {
+      updateCarousel(currentIndex);
+    });
+
+    updateCarousel(0);
   }
 
-  // 4. ANIMACIONES PROGRESIVAS AL DESPLAZARSE (INTERSECTION OBSERVER)
+  // 5. ANIMACIONES PROGRESIVAS AL DESPLAZARSE (INTERSECTION OBSERVER)
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (!prefersReducedMotion && 'IntersectionObserver' in window) {
@@ -68,40 +110,25 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
-          // Desobservar una vez animado para mejor rendimiento
           observer.unobserve(entry.target);
         }
       });
     }, {
       root: null,
-      threshold: 0.12, // Se activa cuando el 12% del elemento es visible
+      threshold: 0.12,
       rootMargin: '0px 0px -40px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
   } else {
-    // Si el usuario prefiere movimiento reducido o el navegador es antiguo, mostrar todo directamente
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
   }
 
-  // 5. MANEJO INTELIGENTE DE LA IMAGEN PRINCIPAL (COMPROBACIÓN DE ASSET)
+  // 6. MANEJO Y ROBUSTEZ DE LA IMAGEN PRINCIPAL
   const heroImg = document.getElementById('hero-image');
   if (heroImg) {
-    // Intentar cargar imagen alternativa en formato JPG o PNG si el usuario la coloca en la carpeta assets
-    const customPhoto = new Image();
-    customPhoto.src = 'assets/imagen-principal.jpg';
-    
-    customPhoto.onload = () => {
-      heroImg.src = 'assets/imagen-principal.jpg';
-    };
-
-    // Si no existe 'imagen-principal.jpg', también probar con 'hero.jpg'
-    customPhoto.onerror = () => {
-      const customPhoto2 = new Image();
-      customPhoto2.src = 'assets/hero.jpg';
-      customPhoto2.onload = () => {
-        heroImg.src = 'assets/hero.jpg';
-      };
+    heroImg.onerror = () => {
+      heroImg.src = 'assets/hero-libreria.svg';
     };
   }
 });

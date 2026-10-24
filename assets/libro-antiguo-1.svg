@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leatherGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c1d11"/>
+      <stop offset="50%" stop-color="#4a2c17"/>
+      <stop offset="100%" stop-color="#1f140b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5c158"/>
+      <stop offset="50%" stop-color="#fdf3a9"/>
+      <stop offset="100%" stop-color="#b88d2a"/>
+    </linearGradient>
+    <filter id="bookShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="600" height="800" fill="#f4efe6"/>
+  <!-- Book base with shadow -->
+  <g filter="url(#bookShadow)" transform="translate(60, 50)">
+    <!-- Cover -->
+    <rect x="0" y="0" width="480" height="700" rx="16" fill="url(#leatherGrad)" stroke="#1a0f07" stroke-width="3"/>
+    <!-- Spine texture line -->
+    <line x1="38" y1="0" x2="38" y2="700" stroke="#150a04" stroke-width="4"/>
+    <line x1="42" y1="0" x2="42" y2="700" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+    <!-- Gilded filigree frame -->
+    <rect x="65" y="45" width="375" height="610" rx="8" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <rect x="75" y="55" width="355" height="590" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="6,4"/>
+    <!-- Corner ornaments -->
+    <path d="M 65 95 C 95 95, 95 65, 95 45" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M 440 95 C 410 95, 410 65, 410 45" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M 65 605 C 95 605, 95 635, 95 655" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <path d="M 440 605 C 410 605, 410 635, 410 655" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Center Emblem -->
+    <circle cx="252" cy="280" r="56" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+    <circle cx="252" cy="280" r="50" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="252" y="290" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle">✦</text>
+    <!-- Titles -->
+    <text x="252" y="390" font-family="'Newsreader', Georgia, serif" font-size="28" font-weight="600" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4">DE RE METALLICA</text>
+    <text x="252" y="425" font-family="'Newsreader', Georgia, serif" font-size="16" font-style="italic" fill="#dfc382" text-anchor="middle" letter-spacing="2">EDICIÓN EN CUERO &amp; ORO</text>
+    <line x1="170" y1="455" x2="335" y2="455" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    <text x="252" y="490" font-family="sans-serif" font-size="13" font-weight="600" fill="#bfa368" text-anchor="middle" letter-spacing="3">BASILEA • MDCLXI</text>
+    <text x="252" y="580" font-family="sans-serif" font-size="12" fill="#8e7345" text-anchor="middle" letter-spacing="2">EJEMPLAR NUMERADO DE COLECCIÓN</text>
+  </g>
+</svg>

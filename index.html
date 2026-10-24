@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Librería — Una librería independiente para descubrir historias, ideas y conversaciones. Libros para mirar el mundo de otra manera.">
-  <title>Librería — Libros para mirar el mundo de otra manera</title>
+    content="Punto y Seguido, Librería — Una librería independiente para descubrir historias, ideas y conversaciones. Libros para mirar el mundo de otra manera.">
+  <title>Punto y Seguido, Librería — Libros para mirar el mundo de otra manera</title>
 
   <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Body Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     rel="stylesheet">
 
   <!-- Estilos Principales -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 
 <body>
@@ -26,15 +26,16 @@
        ========================================================================= -->
   <header class="site-header" id="site-header">
     <div class="container header-container">
-      <a href="#inicio" class="brand-logo" aria-label="Inicio de Librería">
-        Librería<span class="dot">.</span>
+      <a href="index.html" class="brand-logo" aria-label="Inicio de Punto y Seguido, Librería">
+        Punto y Seguido<span class="dot">,</span>&nbsp;Librería
       </a>
 
       <nav class="main-nav" aria-label="Navegación principal">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
           <li><a href="espacio-editorial.html" class="nav-link">Espacio Editorial</a></li>
-          <li><a href="#proximamente" class="nav-link">Muy pronto</a></li>
+          <li><a href="espacio-editorial.html#seccion-biblioteca" class="nav-link">Biblioteca Digital</a></li>
+          <li><a href="#catalogo-curado" class="nav-link">Catálogo Curado</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
 
@@ -60,36 +61,45 @@
 
           <!-- Columna de Texto -->
           <div class="hero-content reveal">
-            <span class="eyebrow">Librería Independiente</span>
-            <h1 class="hero-title">Libros para mirar el mundo de otra manera<span
-                style="color: var(--color-accent);">.</span></h1>
+            <span class="eyebrow">Librería de libros de segunda mano &bull; Espacio Cultural</span>
+            
+            <h1 class="hero-title">
+              Libros para mirar el mundo de otra manera<span class="hero-dot">.</span>
+            </h1>
+
             <p class="hero-subtitle">
-              Una librería independiente para descubrir historias, ideas y conversaciones.
+              Una librería independiente y espacio de pensamiento para descubrir historias, ideas y conversaciones que perduran. Un punto y seguido para cada lectura.
             </p>
 
             <div class="hero-actions">
-              <a href="#espacio editorial" class="btn btn-primary" id="btn-discover">
-                Descubrir el proyecto
+              <a href="espacio-editorial.html" class="btn btn-primary" id="btn-discover">
+                Descubrir el Espacio Editorial
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <line x1="5" y1="12" x2="19" y2="12" />
                   <polyline points="12 5 19 12 12 19" />
                 </svg>
               </a>
+              <a href="#catalogo-curado" class="btn btn-secondary-subtle-dark">
+                Catálogo Curado ↓
+              </a>
             </div>
 
             <div class="hero-footer-note">
               <span class="pulse-dot"></span>
-              <span>Muy pronto en tu ciudad</span>
+              <span>Libros con historia en mostrador físico &amp; foro literario digital</span>
             </div>
           </div>
 
-          <!-- Columna Visual (Imagen Destacada Protagonista) -->
+          <!-- Columna Visual (Imagen Destacada Protagonista con enlace a Espacio Editorial) -->
           <div class="hero-visual reveal reveal-delay-1">
-            <div class="hero-image-wrapper">
-              <!-- Carga de la imagen principal con fallback automático si se agrega imagen real -->
-              <img src="assets/hero-libreria.svg" alt="Espacio de lectura acogedor y libros curados en la librería"
-                class="hero-img" id="hero-image">
-            </div>
+            <a href="espacio-editorial.html" class="hero-image-wrapper hero-image-link" aria-label="Explorar el Espacio Editorial">
+              <img src="assets/hero-punto-y-seguido-opt.jpg" alt="Interior cálido y luminoso de Punto y Seguido, Librería con estanterías de madera repletas de libros y acogedor sillón de lectura"
+                class="hero-img" id="hero-image" loading="eager" fetchpriority="high" width="1600" height="1200">
+              <div class="hero-image-badge">
+                <span class="badge-dot"></span>
+                <span>Explorar Espacio Editorial ↗</span>
+              </div>
+            </a>
           </div>
 
         </div>
@@ -102,70 +112,146 @@
     <section class="manifest-section" id="manifiesto">
       <div class="container">
         <div class="manifest-content reveal">
-          <span class="eyebrow" style="justify-content: center;">Manifiesto</span>
+          <span class="eyebrow" style="justify-content: center;">Manifiesto de Continuidad</span>
           <blockquote class="manifest-quote">
-            “Creemos en la lectura como un acto de pausar, cuestionar y reconectar. Seleccionamos títulos que despiertan
-            curiosidad, <strong>abren diálogos</strong> y permanecen con nosotros mucho después de cerrar la última
-            página.”
+            “Un libro leído nunca está cerrado del todo; espera en silencio a su próximo cómplice. Creemos en la lectura como un <strong>punto y seguido</strong>: un puente entre quienes ya se deslumbraron con estas páginas y quien está a punto de abrirlas por primera vez.”
           </blockquote>
-          <p class="manifest-author">— Proyecto Librería</p>
+          <p class="manifest-author">— Punto y Seguido, Librería</p>
         </div>
       </div>
     </section>
 
     <!-- =========================================================================
-         4. SECCIÓN "MUY PRONTO" (PILARES Y ACTIVIDADES)
+         4. BLOQUE LLAMATIVO DESTACADO (INVITACIÓN AL ESPACIO EDITORIAL)
          ========================================================================= -->
-    <section class="coming-soon-section" id="proximamente">
+    <section class="editorial-spotlight-section">
       <div class="container">
-
-        <div class="section-header reveal">
-          <span class="eyebrow">Próxima Apertura</span>
-          <h2 class="section-title">Muy pronto.</h2>
-          <p class="section-subtitle">
-            Estamos preparando un espacio pensado para quienes disfrutan descubrir libros con tiempo y curiosidad.
-          </p>
-        </div>
-
-        <div class="pillars-grid">
-          <!-- Pilar 1 -->
-          <article class="pillar-card reveal reveal-delay-1">
-            <div class="pillar-number">01</div>
-            <h3 class="pillar-title">Catálogo Curado</h3>
-            <p class="pillar-text">
-              Una selección cuidada de literatura contemporánea, ensayos provocadores, poesía e independientes de
-              editoriales de todo el mundo.
+        <div class="editorial-spotlight-card reveal">
+          <div class="spotlight-content">
+            <span class="eyebrow eyebrow-light">El corazón de nuestra comunidad</span>
+            <h2 class="spotlight-title">El Espacio Editorial es nuestro punto de encuentro vivo<span style="color: var(--color-accent);">.</span></h2>
+            <p class="spotlight-text">
+              Más que un catálogo comercial, hemos creado un foro literario contemporáneo: reseñas críticas redactadas por nuestros lectores, columnas de fondo, reflexiones de escritoras y escritores invitados, y una biblioteca digital abierta para consultar obras libres de derechos.
             </p>
-          </article>
-
-          <!-- Pilar 2 -->
-          <article class="pillar-card reveal reveal-delay-2">
-            <div class="pillar-number">02</div>
-            <h3 class="pillar-title">Recomendaciones Personales</h3>
-            <p class="pillar-text">
-              Guías de lectura elaboradas por lectores apasionados. Sin algoritmos, solo criterio y entusiasmo por
-              buenas historias.
-            </p>
-          </article>
-
-          <!-- Pilar 3 -->
-          <article class="pillar-card reveal reveal-delay-3">
-            <div class="pillar-number">03</div>
-            <h3 class="pillar-title">Encuentros &amp; Cultura</h3>
-            <p class="pillar-text">
-              Clubes de lectura, charlas con autoras y autores, presentaciones íntimas y talleres sobre el arte de
-              editar y leer.
-            </p>
-          </article>
-        </div>
-
-        <!-- Tarjeta Teaser Informática -->
-        <div class="teaser-banner reveal">
-          <div class="teaser-info">
-            <h3>Estamos afinando los últimos detalles</h3>
-            <p>Sigue los avances de la librería y sé de los primeros en conocer nuestra fecha de apertura.</p>
+            <div class="spotlight-actions">
+              <a href="espacio-editorial.html" class="btn btn-primary btn-spotlight">
+                Entrar al Espacio Editorial &amp; Foro
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="espacio-editorial.html#seccion-biblioteca" class="btn btn-secondary-subtle">
+                Biblioteca Digital ↗
+              </a>
+            </div>
           </div>
-          <span class="badge-tag">Apertura Próximamente</span>
+          <div class="spotlight-aside">
+            <div class="spotlight-badge-box">
+              <span class="spotlight-stat">4+</span>
+              <span class="spotlight-stat-label">Reseñas en debate activo</span>
+            </div>
+            <div class="spotlight-badge-box">
+              <span class="spotlight-stat">100%</span>
+              <span class="spotlight-stat-label">Venta física en librería &amp; lectura pausada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. SECCIÓN CATÁLOGO CURADO (CARRUSEL DE LIBROS ESPECIALES / JOYAS DE COLECCIÓN)
+         ========================================================================= -->
+    <section class="curated-catalog-section" id="catalogo-curado">
+      <div class="container">
+        <div class="block-header reveal">
+          <div>
+            <span class="eyebrow">Ediciones Especiales &amp; Joyas Físicas</span>
+            <h2 class="block-title">Catálogo Curado</h2>
+            <p class="block-desc">
+              Una muestra seleccionada de nuestros volúmenes más preciados: ediciones de colección, encuadernaciones históricas y libros singulares disponibles únicamente para adquisición física en nuestra librería.
+            </p>
+          </div>
+          <div class="carousel-nav-buttons">
+            <button class="carousel-btn prev" id="carousel-prev" aria-label="Libro anterior">←</button>
+            <button class="carousel-btn next" id="carousel-next" aria-label="Libro siguiente">→</button>
+          </div>
+        </div>
+
+        <!-- CARRUSEL DE LIBROS ESPECIALES -->
+        <div class="curated-carousel-container reveal">
+          <div class="curated-carousel-track" id="curated-track">
+            
+            <!-- Item 1 -->
+            <article class="curated-card">
+              <div class="curated-card-image-box">
+                <img src="assets/libro-antiguo-1.svg" alt="De Re Metallica, ejemplar antiguo encuadernado en cuero y pan de oro" class="curated-img" loading="lazy">
+                <span class="curated-pill-tag">Edición de Colección</span>
+              </div>
+              <div class="curated-card-info">
+                <div class="curated-meta">Siglo XVII • Basilea</div>
+                <h3 class="curated-book-title">De Re Metallica</h3>
+                <p class="curated-book-author">Georgius Agricola (Encuadernación en becerro &amp; estampación en oro)</p>
+                <p class="curated-book-desc">
+                  Tratado renacentista de valor patrimonial incalculable. Incluye xilografías originales de época, tipografía gótica-romana y cantos decorados a mano.
+                </p>
+                <div class="curated-card-footer">
+                  <span class="curated-availability-dot"></span>
+                  <span class="curated-availability-text">Disponible en mostrador físico</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="curated-card">
+              <div class="curated-card-image-box">
+                <img src="assets/libro-antiguo-2.svg" alt="Astronomia Nova de Johannes Kepler, edición histórica con grabados de diagramas celestes" class="curated-img" loading="lazy">
+                <span class="curated-pill-tag">Pieza Única</span>
+              </div>
+              <div class="curated-card-info">
+                <div class="curated-meta">Edición Histórica • Praga</div>
+                <h3 class="curated-book-title">Astronomia Nova</h3>
+                <p class="curated-book-author">Johannes Kepler (Tela imperial azul noche &amp; gofrado en plata)</p>
+                <p class="curated-book-desc">
+                  La obra que reformuló las leyes del movimiento planetario. Ejemplar conservado con sus tablas diagramáticas desplegables intactas y papel de tina original.
+                </p>
+                <div class="curated-card-footer">
+                  <span class="curated-availability-dot"></span>
+                  <span class="curated-availability-text">Disponible en mostrador físico</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="curated-carousel-dots" id="carousel-dots" aria-hidden="true">
+          <span class="dot-indicator active"></span>
+          <span class="dot-indicator"></span>
+        </div>
+
+        <!-- BLOQUE NOSTÁLGICO & OPTIMISTA: EL ENCANTO DEL LIBRO CON HISTORIA -->
+        <div class="used-books-tribute reveal">
+          <div class="used-books-tribute-inner">
+            <div class="tribute-header">
+              <span class="eyebrow">La Magia del Reencuentro</span>
+              <h3 class="tribute-title">Mucho más que joyas de colección: el placer de hojear un libro con pasado</h3>
+            </div>
+            <div class="tribute-body">
+              <p>
+                Estas ediciones históricas son solo una pequeña muestra de lo que atesoramos. En nuestras mesas y estanterías físicas conviven <strong>miles de libros</strong> de narrativa, poesía, filosofía, teatro y ensayo esperando a que alguien los devuelva a la vida.
+              </p>
+              <p>
+                Amamos los lomos gastados con dignidad, las dedicatorias anónimas escritas a lápiz hace décadas y el perfume inconfundible del papel noble. En <strong>Punto y Seguido</strong> cada ejemplar no es solo una lectura maravillosa a precio asequible: es formar parte de una cadena invisible y optimista de lectores que se prestan la palabra a través del tiempo.
+              </p>
+            </div>
+            <div class="tribute-footer">
+              <span class="tribute-tag">✦ Miles de títulos en tienda física</span>
+              <span class="tribute-tag">✦ Desde clásicos de bolsillo hasta rarezas descatalogadas</span>
+              <span class="tribute-tag">✦ Precios justos &amp; hallazgos fortuitos</span>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -173,27 +259,28 @@
   </main>
 
   <!-- =========================================================================
-       5. PIE DE PÁGINA (FOOTER Y ENLACES)
+       6. PIE DE PÁGINA (FOOTER Y ENLACES)
        ========================================================================= -->
   <footer class="site-footer" id="contacto">
     <div class="container">
       <div class="footer-grid">
 
         <div class="footer-brand">
-          <a href="#inicio" class="footer-logo" aria-label="Ir al inicio de Librería">
-            Librería<span class="dot">.</span>
+          <a href="index.html" class="footer-logo" aria-label="Ir al inicio de Punto y Seguido, Librería">
+            Punto y Seguido<span class="dot">,</span>&nbsp;Librería
           </a>
           <p>
-            Una librería independiente dedicada a descubrir historias, ideas y conversaciones que importan.
+            Una librería independiente dedicada a descubrir historias, ideas y conversaciones que importan. Venta física y foro literario digital.
           </p>
         </div>
 
         <div class="footer-col">
           <h4>Navegación</h4>
           <ul class="footer-links">
-            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
             <li><a href="espacio-editorial.html" class="footer-link">Espacio Editorial</a></li>
-            <li><a href="#proximamente" class="footer-link">Muy pronto</a></li>
+            <li><a href="espacio-editorial.html#seccion-biblioteca" class="footer-link">Biblioteca Digital</a></li>
+            <li><a href="#catalogo-curado" class="footer-link">Catálogo Curado</a></li>
           </ul>
         </div>
 
@@ -206,7 +293,7 @@
               </a>
             </li>
             <li>
-              <a href="mailto:hola@libreria.com" class="footer-link">
+              <a href="mailto:hola@puntoyseguidolibreria.com" class="footer-link">
                 Contacto
               </a>
             </li>
@@ -216,7 +303,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Librería. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Punto y Seguido, Librería. Todos los derechos reservados.</p>
         <p>Libros para mirar el mundo de otra manera.</p>
       </div>
     </div>

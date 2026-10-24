@@ -1,0 +1,54 @@
+[
+  {
+    "id": "la-metamorfosis",
+    "titulo": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "año": "1915",
+    "categoria": "Dominio Público",
+    "tiempoLectura": "2 horas aprox.",
+    "licencia": "Libre de derechos de autor (Dominio Público)",
+    "extracto": "«Al despertar Gregorio Samsa una mañana, tras un sueño intranquilo, se encontró sobre su cama convertido en un monstruoso insecto».",
+    "sinopsis": "Una de las obras cumbre de la literatura universal del siglo XX. Kafka aborda con maestría psicológica la alienación, el aislamiento social, el deber familiar y la deshumanización del individuo en las sociedades modernas.",
+    "contenido": "Al despertar Gregorio Samsa una mañana, tras un sueño intranquilo, se encontró sobre su cama convertido en un monstruoso insecto. Estaba tumbado sobre su dura espalda, y al levantar un poco la cabeza vio su vientre abombado, pardo, dividido por partes duras en forma de arco, sobre cuya cima apenas podía sostenerse el cobertor, a punto ya de escurrirse por completo.\n\nSus muchas patas, ridículamente pequeñas en comparación con el resto de su tamaño, le vibraban desamparadas ante los ojos. «¿Qué me ha ocurrido?», pensó. No era un sueño. Su habitación, una auténtica habitación humana, tal vez un poco pequeña, permanecía tranquila entre las cuatro paredes bien conocidas.\n\nSobre la mesa, en la que se hallaba extendido un muestrario de paños desempaquetados —Samsa era viajante de comercio—, colgaba una estampa que había recortado recientemente de una revista ilustrada y puesto en un marco bonito y dorado...",
+    "enlacePublico": "https://www.gutenberg.org/ebooks/57864"
+  },
+  {
+    "id": "noches-blancas",
+    "titulo": "Noches blancas",
+    "autor": "Fiódor Dostoyevski",
+    "año": "1848",
+    "categoria": "Dominio Público",
+    "tiempoLectura": "1.5 horas aprox.",
+    "licencia": "Libre de derechos de autor (Dominio Público)",
+    "extracto": "«Era una noche maravillosa, una de esas noches que quizá solo se dan cuando somos jóvenes, querido lector».",
+    "sinopsis": "Subtitulada «Novela sentimental (De las memorias de un soñador)», transcurre a lo largo de cuatro noches de verano en San Petersburgo, donde el soñador solitario conoce a Nástenka a orillas del canal y experimenta la belleza efímera del afecto humano.",
+    "contenido": "Era una noche maravillosa, una de esas noches que quizá solo se dan cuando somos jóvenes, querido lector. El cielo estaba tan estrellado, tan luminoso, que al mirarlo uno no podía menos de preguntarse: ¿es posible que bajo semejante cielo viva gente enfadada y caprichosa?\n\nEsta es también una pregunta juvenil, querido lector, muy juvenil, pero ¡ojalá el Señor se la inspire a tu alma más a menudo! Y hablando de personas caprichosas y enfadadas, no pude menos de recordar mi propio comportamiento durante todo aquel día...",
+    "enlacePublico": "https://www.gutenberg.org/ebooks/36034"
+  },
+  {
+    "id": "el-retrato-de-dorian-gray",
+    "titulo": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "año": "1890",
+    "categoria": "Dominio Público",
+    "tiempoLectura": "5 horas aprox.",
+    "licencia": "Libre de derechos de autor (Dominio Público)",
+    "extracto": "«La única manera de librarse de una tentación es ceder ante ella».",
+    "sinopsis": "El manifiesto estético y filosófico de Wilde sobre la belleza eterna, la vanidad, la moral victoriana y el precio irreparable del alma humana ante el hedonismo absoluto.",
+    "contenido": "El estudio estaba lleno del intenso olor de las rosas, y cuando la suave brisa del verano se movía entre los árboles del jardín, llegaba por la puerta abierta el pesado aroma de las lilas o el perfume más delicado de los espinos de flores rosadas.\n\nDesde el rincón del diván de alforjas persas en que estaba acostado, fumando como de costumbre innumerables cigarrillos, Lord Henry Wotton apenas podía percibir el resplandor de las flores de un laburno, dulce como la miel y de color de oro, cuyas ramas temblorosas parecían apenas capaces de soportar el peso de una belleza tan deslumbrante...",
+    "enlacePublico": "https://www.gutenberg.org/ebooks/174"
+  },
+  {
+    "id": "cumbres-borrascosas",
+    "titulo": "Cumbres Borrascosas",
+    "autor": "Emily Brontë",
+    "año": "1847",
+    "categoria": "Dominio Público",
+    "tiempoLectura": "6 horas aprox.",
+    "licencia": "Libre de derechos de autor (Dominio Público)",
+    "extracto": "«De lo que sea que estén hechas nuestras almas, la suya y la mía son lo mismo».",
+    "sinopsis": "La apasionada y salvaje tragedia ambientada en los páramos de Yorkshire. Una historia gótica de obsesión, venganza, orgullo de clases y un amor indomable que trasciende a la misma muerte.",
+    "contenido": "Acabo de regresar de una visita a mi casero, el solitario vecino con el que tendré que lidiar. Es sin duda un paraje hermoso. En toda Inglaterra no creo que hubiera podido encontrar una situación tan completamente apartada del bullicio de la sociedad. Un perfecto paraíso de misántropos; y el señor Heathcliff y yo formamos una pareja tan adecuada para dividir el desierto entre nosotros...",
+    "enlacePublico": "https://www.gutenberg.org/ebooks/768"
+  }
+]

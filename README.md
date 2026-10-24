@@ -1,6 +1,6 @@
-# Librería — Landing Page & Espacio Editorial
+# Punto y Seguido, Librería — Landing Page & Espacio Editorial
 
-Primera versión local de la página de portada y el **Espacio Editorial** para **Librería**, una librería independiente. Diseñada con una estética limpia, tranquila y editorial, pensada para funcionar 100% de forma estática en tu computadora sin necesidad de instalar bases de datos, Node.js o frameworks.
+Página web de portada y **Espacio Editorial** para **Punto y Seguido, Librería**, una librería independiente. Diseñada con una estética limpia, tranquila y editorial, pensada para funcionar 100% de forma estática en tu computadora sin necesidad de instalar bases de datos, Node.js o frameworks.
 
 ---
 
@@ -34,40 +34,26 @@ En lugar de un blog convencional, el **Espacio Editorial** presenta un concepto 
 
 ---
 
-## 📁 Carpeta `escritos/` (Cómo agregar nuevas reseñas y artículos)
+## 📁 Carpeta `escritos/` (Cómo agregar nuevos libros y escritos)
 
 Todos los contenidos del Espacio Editorial se guardan de forma limpia y estructurada dentro de la carpeta `escritos/`:
 
-1. **`escritos/resenas-libros.json`**: Aquí están las reseñas de libros ordenadas por título. Para añadir un nuevo libro, solo agrega un bloque como este:
-   ```json
-   {
-     "id": "nombre-del-libro",
-     "titulo": "Título del Libro",
-     "autor": "Nombre del Autor",
-     "editorial": "Nombre de la Editorial",
-     "categoria": "Narrativa Contemporánea",
-     "tiempoLectura": "3 min de lectura",
-     "fecha": "Septiembre 2026",
-     "extracto": "Resumen breve de una frase.",
-     "contenido": "Texto completo de la reseña...",
-     "comentarios": []
-   }
-   ```
-2. **`escritos/critica-literaria.json`**: Contiene los artículos de la columna de crítica de fondo.
-3. **`escritos/escritor-invitado.json`**: Contiene la colaboración especial del autor invitado del mes.
+1. **`escritos/resenas-libros.json`**: Reseñas de los lectores. Se ordenan automáticamente por fecha de publicación (la más reciente primero).
+2. **`escritos/critica-literaria.json`**: Artículos de fondo para la columna de crítica.
+3. **`escritos/escritor-invitado.json`**: Colaboración especial con autores invitados.
+4. **`escritos/biblioteca-virtual.json`**: Colección de libros clásicos libres de derechos de autor (dominio público) con sinopsis, fragmento y enlace de descarga completa.
 
 ---
 
 ## 🛠️ Los archivos del proyecto
 
-- **`index.html`**: Portada principal con navegación y manifiesto.
-- **`espacio-editorial.html`**: Página del Espacio Editorial y foro de lecturas por título.
-- **`styles.css`**: Hoja de estilos con la paleta de colores, tipografías y modal lector.
-- **`script.js`**: Interacciones principales y menú móvil.
-- **`editorial.js`**: Lógica de búsqueda por título, filtros y sistema de comentarios del foro.
-- **`assets/`**: Carpeta para la imagen principal (`hero-libreria.svg` o `imagen-principal.jpg`).
-- **`escritos/`**: Carpeta con los contenidos de reseñas, crítica y escritor invitado.
+- **`index.html`**: Portada principal con navegación, hero optimizado y manifiesto de Punto y Seguido, Librería.
+- **`espacio-editorial.html`**: Espacio Editorial con reseñas ordenadas por fecha, crítica, escritor invitado, biblioteca virtual y buscador al final.
+- **`styles.css`**: Hoja de estilos con diseño editorial, drawer lateral con fondo desenfocado (blur) y barra de progreso de lectura.
+- **`editorial.js`**: Lógica de ordenamiento cronológico, lector lateral, barra de lectura interactiva, buscador y foro.
+- **`assets/`**: Fotografías optimizadas (`hero-punto-y-seguido-opt.jpg`) e ilustraciones vectoriales.
+- **`escritos/`**: Archivos de datos JSON para reseñas, columnas y clásicos de dominio público.
 
 ---
 
-¡Disfruta haciendo crecer el Espacio Editorial de tu librería!
+¡Disfruta haciendo crecer el Espacio Editorial y la Biblioteca Virtual de Punto y Seguido, Librería!
